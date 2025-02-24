@@ -11,7 +11,7 @@ import { Server, Socket } from 'socket.io';
 import { MessagesService } from './messages.service';
 import { generateResponse } from './utils/generate-response';
 
-@WebSocketGateway({ namespace: 'messages' })
+@WebSocketGateway(8001, { cors: '*' })
 export class MessagesGateway
   implements OnGatewayConnection, OnGatewayDisconnect
 {
@@ -45,6 +45,6 @@ export class MessagesGateway
       { response },
     );
     console.log('generate-response', updateMessage?.response);
-    client.emit('response', updateMessage?.response);
+    this.server.emit('response', updateMessage?.response);
   }
 }
