@@ -1,50 +1,39 @@
-# React + TypeScript + Vite
+# Breakup Survival Kit - Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Descripción
+Esta es la parte frontend del proyecto **Breakup Survival Kit**, desarrollada con **Vite.js, React y TypeScript**. Proporciona una interfaz simple para interactuar con el backend, permitiendo enviar mensajes y recibir respuestas generadas por OpenAI en tiempo real.
 
-Currently, two official plugins are available:
+## 🚀 Instalación y ejecución
+Para ejecutar el frontend, sigue estos pasos:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Navega a la carpeta `web/`**
+   ```sh
+   cd web
+   ```
 
-## Expanding the ESLint configuration
+2. **Instala las dependencias**
+   ```sh
+   npm install
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+3. **Inicia el servidor de desarrollo**
+   ```sh
+   npm run dev
+   ```
 
-- Configure the top-level `parserOptions` property like this:
+4. **Accede a la aplicación**
+   - El servidor se ejecutará en `http://localhost:5173`
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📂 Estructura del proyecto
+```
+web/
+│-- src/        # Código fuente principal
+│-- public/     # Archivos estáticos
+│-- package.json  # Dependencias del proyecto
+│-- vite.config.ts  # Configuración de Vite
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+¡Gracias por revisar este proyecto! 🎉
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
