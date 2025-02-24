@@ -14,7 +14,7 @@ Breakup Survival Kit/
 │-- web/   # Contiene el frontend desarrollado con Vite.js y React
 ```
 
-### 📌 **API (Backend - NestJS)**
+### 📌 **API (NestJS)**
 Ubicada en la carpeta `api/`, esta parte del proyecto maneja la lógica del backend, incluyendo:
 - Generación de respuestas con OpenAI.
 - Manejo de WebSockets para comunicación en tiempo real.
@@ -22,7 +22,7 @@ Ubicada en la carpeta `api/`, esta parte del proyecto maneja la lógica del back
 
 📌 **Para ver más detalles sobre la configuración y ejecución del backend, revisa el README dentro de la carpeta `api/`.**
 
-### 🎨 **WEB (Frontend - BitJS y React)**
+### 🎨 **WEB (ViteJS y React)**
 Ubicada en la carpeta `web/`, esta parte del proyecto ofrece una interfaz gráfica simple para interactuar con el backend.
 - Conexión a WebSockets para recibir respuestas en tiempo real.
 - Interfaz para enviar mensajes y recibir contenido generado por OpenAI.
