@@ -1,5 +1,7 @@
 # Breakup Survival Kit
 
+![570shots_so](https://github.com/user-attachments/assets/835af496-d00d-4a71-968f-454101966671)
+
 ## ¿Qué es este proyecto?
 **Breakup Survival Kit** es una aplicación diseñada para proporcionar respuestas automáticas y contenido relevante utilizando OpenAI. El backend ha sido desarrollado con **NestJS**, utilizando **WebSockets** para comunicación en tiempo real. Adicionalmente, se ha creado un frontend con **Vite.js** y **React** para visualizar las funcionalidades del backend de manera sencilla.
 
